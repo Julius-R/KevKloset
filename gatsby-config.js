@@ -6,9 +6,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Shopify Starter`,
-    description: `Kick off your next, ecommerce experience with this Gatsby starter. This starter ships with credentials to a shopify demo store so you can try it out immediately.`,
-    author: `@alexanderhorl`,
+    title: `Kevins Kloset LLC`,
+    description: `Your one stop shop for the latest in Boy's Fashion Clothing`,
+    author: `Tarneisha Brown`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       },
     },
     {
