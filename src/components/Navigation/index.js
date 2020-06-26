@@ -26,8 +26,8 @@ const Navigation = ({ siteTitle }) => {
             className="bg-cover "
             style={{
               backgroundImage: `url(${pop})`,
-              width: '120px',
-              height: '120px',
+              width: '175px',
+              height: '175px',
             }}
           ></div>
         </Link>
