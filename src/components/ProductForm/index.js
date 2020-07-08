@@ -116,7 +116,7 @@ const ProductForm = ({ product }) => {
           {options.map(({ id, name, values }, index) => (
             <React.Fragment key={id}>
               <label htmlFor={name} className="">
-                {name}{' '}
+                {name}
               </label>
               <select
                 class="block appearance-none bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
@@ -128,7 +128,7 @@ const ProductForm = ({ product }) => {
                   <option
                     value={value}
                     key={`${name}-${value}`}
-                    disabled={checkDisabled(name, value)}
+                    // disabled={checkDisabled(name, value)}
                   >
                     {value}
                   </option>
@@ -138,7 +138,7 @@ const ProductForm = ({ product }) => {
           ))}
         </div>
       </div>
-      <div class="flex">
+      <div class="relative w-full flex items-center justify-between">
         <span class="title-font font-medium text-2xl text-gray-900">
           {price}
         </span>

@@ -1,5 +1,5 @@
-import React from "react"
-import header from "../images/terricks-noah-n9R0MN3XGvY-unsplash.jpg"
+import React from 'react'
+import header from '../images/KevinJr.jpg'
 
 export default function Jumbotron() {
   return (
@@ -20,7 +20,7 @@ export default function Jumbotron() {
           <div class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div class="text-center lg:text-left">
               <h2 class="text-4xl text-white tracking-tight leading-10 font-thin sm:text-5xl sm:leading-none md:text-6xl">
-                Your one stop shop for the latest in{" "}
+                Your one stop shop for the latest in{' '}
                 <span className="text-cg">Boy’s Fashion Clothing</span>
               </h2>
             </div>
@@ -32,9 +32,9 @@ export default function Jumbotron() {
           class="h-56 w-full bg-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
           style={{
             backgroundImage: `url(${header})`,
-            backgroundSize: "cover",
-            backgroundPositionY: "top -80px",
-            backgroundPositionX: "center",
+            backgroundSize: 'cover',
+            backgroundPositionY: '-240px',
+            backgroundPositionX: 'center',
           }}
         ></div>
       </div>

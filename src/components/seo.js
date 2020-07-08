@@ -18,6 +18,7 @@ function SEO({ description, lang, meta, keywords, title }) {
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            link={[{ rel: 'stylesheet', href: 'carousel.css' }]}
             meta={[
               {
                 name: `description`,

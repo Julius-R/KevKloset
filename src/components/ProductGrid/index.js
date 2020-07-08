@@ -72,7 +72,7 @@ const ProductGrid = props => {
                   >
                     {' '}
                     <div>
-                      <div className="block relative h-48 rounded overflow-hidden">
+                      <div className="block relative rounded overflow-hidden">
                         {firstImage && firstImage.localFile && (
                           <img
                             class="object-cover object-center w-full h-full block"
@@ -80,7 +80,7 @@ const ProductGrid = props => {
                             fluid={firstImage.localFile.childImageSharp.fluid}
                             alt={handle}
                             style={{
-                              height: '350px',
+                              height: '450px',
                               backgroundSize: 'cover',
                               backgroundPositionX: 'center',
                             }}

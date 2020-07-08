@@ -19,13 +19,13 @@ export default function product(props) {
       {' '}
       {console.log(props)}
       <div>
-        <div className="block relative h-48 rounded overflow-hidden">
+        <div className="block relative rounded overflow-hidden">
           <img
             alt="ecommerce"
             class="object-cover object-center w-full h-full block"
             src={images[0].originalSrc}
             style={{
-              height: '350px',
+              maxHeight: '450px',
               backgroundSize: 'cover',
               backgroundPositionX: 'center',
             }}
