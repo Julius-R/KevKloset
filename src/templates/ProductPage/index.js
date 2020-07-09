@@ -40,7 +40,6 @@ const ProductPage = ({ data }) => {
   let srcs = product.images.map(image => image.originalSrc)
   return (
     <>
-      {console.log(srcs)}
       <SEO title={product.title} description={product.description} />
       <FsLightbox toggler={toggler} sources={srcs} />
       <section class="text-gray-700 body-font overflow-hidden">

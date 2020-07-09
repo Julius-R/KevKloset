@@ -1,5 +1,5 @@
 import React from 'react'
-import header from '../images/option.jpg'
+import header from '../images/KevinJr.jpg'
 
 export default function Jumbotron() {
   return (
@@ -30,12 +30,7 @@ export default function Jumbotron() {
       <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <div
           class="h-56 w-full bg-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          style={{
-            backgroundImage: `url(${header})`,
-            backgroundSize: 'cover',
-            backgroundPositionY: '-140px',
-            backgroundPositionX: 'center',
-          }}
+          id="logo"
         ></div>
       </div>
     </section>

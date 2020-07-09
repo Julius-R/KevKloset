@@ -21,7 +21,10 @@ const Navigation = ({ siteTitle }) => {
   return (
     <nav className="w-full px-4 relative">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <Link
+          to="/"
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
           <div
             className="bg-cover "
             style={{
@@ -33,6 +36,7 @@ const Navigation = ({ siteTitle }) => {
         </Link>
         <ul class="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <Link
+            state={{ category: 'All' }}
             className="cursor-pointer px-3 py-2 flex items-center text-xl uppercase font-thin leading-snug text-cb hover:opacity-75"
             to="/store"
           >

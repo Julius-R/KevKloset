@@ -2,6 +2,17 @@ import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Product from './product'
 
+/*
+
+<h2 className="text-3xl text-cw mb-4">Check out the shop!</h2>
+          <Link
+            state={{ category: 'Clothing' }}
+            to="/store"
+            className="inline-flex items-center justify-center px-5 py-3 text-base leading-6 font-medium rounded-md text-cb bg-cg focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+          >
+            Start Shopping
+          </Link>
+          */
 export default function StorePortal() {
   const { allShopifyProduct } = useStaticQuery(
     graphql`
@@ -29,18 +40,46 @@ export default function StorePortal() {
       }
     `
   )
+
   return (
     <>
-      {console.log(allShopifyProduct)}
-      <section className="py-8 px-4 text-center bg-cb">
-        <div className="w-full max-w-2xl mx-auto">
-          <h2 className="text-3xl text-cw mb-4">Check out the shop!</h2>
-          <Link
-            to="/store"
-            className="inline-flex items-center justify-center px-5 py-3 text-base leading-6 font-medium rounded-md text-cb bg-cg focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-          >
-            Start Shopping
-          </Link>
+      <section className="w-full py-8 px-4 text-center bg-cb">
+        <div class="container px-5 mx-auto flex flex-wrap">
+          <div class="lg:w-2/3 mx-auto">
+            <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+              <div class="text-center relative z-10 w-full">
+                <Link state={{ category: 'All' }} to="/store">
+                  <h2 class="text-2xl font-medium title-font mb-2">
+                    Shop Everything!
+                  </h2>
+                </Link>
+              </div>
+            </div>
+            <div class="flex flex-wrap -mx-2">
+              <div class="px-2 w-1/2">
+                <Link state={{ category: 'Clothing' }} to="/store">
+                  <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+                    <div class="text-center relative z-10 w-full">
+                      <h2 class="text-xl font-medium title-font mb-2">
+                        Shop Clothes
+                      </h2>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div class="px-2 w-1/2">
+                <Link state={{ category: 'Accessories' }} to="/store">
+                  <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+                    <div class="text-center relative z-10 w-full">
+                      <h2 class="text-xl font-medium title-font mb-2">
+                        Shop Accessories
+                      </h2>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="text-gray-700 body-font">

@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#logo {
+  background-image: url('../images/KevinJr.jpg');
+  background-size: cover;
+  background-position-y: -240px;
+  background-position-x: center;
+}
+
+@media screen and (max-width: 700px) {
+  #logo {
+    background-position-y: -100px;
+  }
+}
