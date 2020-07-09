@@ -42,7 +42,7 @@ const ProductGrid = props => {
   const [display, setDisplay] = useState()
   const [products, setProducts] = useState(allShopifyProduct.edges)
   const [category, setCategory] = useState(
-    props.item.category ? props.item.category : 'All'
+    props.item ? props.item.category : 'All'
   )
   const getProductInfo = category => {
     if (category === 'All') {
