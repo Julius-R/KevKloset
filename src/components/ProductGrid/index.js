@@ -41,7 +41,9 @@ const ProductGrid = props => {
   )
   const [display, setDisplay] = useState()
   const [products, setProducts] = useState(allShopifyProduct.edges)
-  const [category, setCategory] = useState(props.item.category)
+  const [category, setCategory] = useState(
+    props.item.category ? props.item.category : 'All'
+  )
   const getProductInfo = category => {
     if (category === 'All') {
       setDisplay(products)
@@ -59,7 +61,7 @@ const ProductGrid = props => {
   useEffect(() => {
     getProductInfo(category)
   }, [category])
-  console.log(props.item.category)
+  console.log(category)
   const getPrice = price =>
     Intl.NumberFormat(undefined, {
       currency: checkout.currencyCode ? checkout.currencyCode : 'EUR',
