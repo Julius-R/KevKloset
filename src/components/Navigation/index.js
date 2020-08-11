@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'gatsby'
 import reduce from 'lodash/reduce'
 import PropTypes from 'prop-types'
-import pop from '../../images/logo.png'
+import pop from '../../images/pop.png'
 
 import StoreContext from '~/context/StoreContext'
 
@@ -29,8 +29,8 @@ const Navigation = ({ siteTitle }) => {
             className="bg-cover "
             style={{
               backgroundImage: `url(${pop})`,
-              width: '175px',
-              height: '175px',
+              width: '185px',
+              height: '160px',
             }}
           ></div>
         </Link>
